@@ -51,15 +51,16 @@ main{
     row-gap: 0%;
     border: none;
     outline: none;  */
-    padding: 2% 2%;
+    padding: 2%;
     
 }
 .collections{
     background-color: wheat;
-    width: 329px;
-    height: 476px;
+    /* width: 329px;
+    height: 476px; */
     align-items: center;
-    width: 100%;
+    height:auto;
+    width: auto;
     border: 5px solid gainsboro;
     padding: 0px;
 }
@@ -79,7 +80,9 @@ main{
     font-family: 'Outfit', sans-serif;
 }
 #more-products{
-    padding-left: 80%;
+    
+    position:absolute;
+    right: 10%;
     color: rgb(199, 9, 199);
     text-decoration: none;
 }
