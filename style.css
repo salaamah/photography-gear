@@ -21,8 +21,13 @@ a:visited{
     display: flex;
 }
 .heading img{
+    margin: auto;
     width: 100%;
     align-content: center;
+}
+.heading img:hover{
+    transform: rotate(30deg);
+    transition: 3s;
 }
 .heading-blog h1{
     font-size: 52;
@@ -38,35 +43,26 @@ a:visited{
 /*-------
     Main
 --------- */
-main{
-    margin: 0% 8%;
-    background-color: rgb(248, 245, 245);
-    
-}
 #collections-heading{
     text-align: center;
 }
 .collection-container{
-    /* column-gap: 2%;
-    row-gap: 0%;
-    border: none;
-    outline: none;  */
-    padding: 2%;
-    
+    padding: 2%;  
+    margin: 0% 7%;
+    background-color: rgb(248, 245, 245);
 }
 .collections{
-    background-color: wheat;
-    /* width: 329px;
-    height: 476px; */
+    background-color: wheat;    
     align-items: center;
     height:auto;
     width: auto;
     border: 5px solid gainsboro;
-    padding: 0px;
+    padding: 3px;
 }
 .product-img{
+    margin: auto;
     width: 100%;
-    padding: 5%;
+    padding: 3%;
 
 }
 .product-details{
@@ -86,13 +82,34 @@ main{
     color: rgb(199, 9, 199);
     text-decoration: none;
 }
+/* ----------------
+    Extra section 
+------------------*/
+.extra{
+    margin: 1% 2%;
+    padding: 2%;
+    display: flex;
+}
 
+.extra-sec-paragraph{
+    padding: 5%;
+}
+.extra-sec-paragraph a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(199, 9, 199);
+    padding: 5px 15px;
+    border-radius: 41px;
+}
 /* ----------
     Footer
 ----------- */
 footer{
     text-align: center;
     background-color: slategrey;
+}
+footer h4{
+    color: whitesmoke;
 }
 
 /*-----------------------
@@ -102,6 +119,12 @@ footer{
     .collection-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-items{
+        display: none;
+    }
+    .heading{
+        flex-direction: column-reverse;
     }
 }
 
