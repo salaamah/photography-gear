@@ -1,3 +1,6 @@
+header{
+    padding: 2%;
+}
 .menu{
     display: flex;
     justify-content: space-between;
@@ -14,8 +17,7 @@ a:visited{
     display: flex;
 }
 .heading img{
-    height: 414;
-    width: 440;
+    width: 100%;
     align-content: center;
 }
 .heading-blog h1{
@@ -27,17 +29,28 @@ a:visited{
     background-color:rgb(199, 9, 199);
     padding: 5px 15px;
     border-radius: 41px;
-    
+}
+main{
+    background-color: rgb(248, 245, 245);
+    padding: 5%;
 }
 #collections-heading{
     text-align: center;
 }
 .collection-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+    row-gap: 1%;
+    border: none;
+    outline: none;
 }
 .collections{
+    width: 329px;
+    height: 476px;
     border: 8px solid gainsboro;
+    padding: 15px;
+}
+.collections img{
+    width: 100%;
 }
 #more-products{
     color: rgb(199, 9, 199);
@@ -47,4 +60,25 @@ a:visited{
 footer{
     text-align: center;
     background-color: slategrey;
+}
+
+@media only screen and (max-width: 688px) {
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 689px){ 
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
