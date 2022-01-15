@@ -51,7 +51,8 @@ main{
     row-gap: 0%;
     border: none;
     outline: none;  */
-    padding: 0% 2%;
+    padding: 2% 2%;
+    
 }
 .collections{
     background-color: wheat;
@@ -70,8 +71,15 @@ main{
 .product-details{
     padding: 5%;
 }
+.product-name{
+    font-family: 'Luxurious Roman', cursive;
+}
+.product-price{
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Outfit', sans-serif;
+}
 #more-products{
-    padding-left: 90%;
+    padding-left: 80%;
     color: rgb(199, 9, 199);
     text-decoration: none;
 }
