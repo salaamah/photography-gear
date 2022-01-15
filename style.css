@@ -1,0 +1,50 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+a:visited{
+    color: black;
+}
+.heading{
+    display: flex;
+}
+.heading img{
+    height: 414;
+    width: 440;
+    align-content: center;
+}
+.heading-blog h1{
+    font-size: 52;
+}
+.heading-blog a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(199, 9, 199);
+    padding: 5px 15px;
+    border-radius: 41px;
+    
+}
+#collections-heading{
+    text-align: center;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.collections{
+    border: 8px solid gainsboro;
+}
+#more-products{
+    color: rgb(199, 9, 199);
+    text-decoration: none;
+    justify-content:right;
+}
+footer{
+    text-align: center;
+    background-color: slategrey;
+}
